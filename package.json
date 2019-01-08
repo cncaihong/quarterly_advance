@@ -1,0 +1,26 @@
+{
+  "name": "quarterly_advance",
+  "version": "0.0.1",
+  "description": "个人报销预提",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa2",
+    "node",
+    "jquery",
+    "redis"
+  ],
+  "author": "macaihong",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "redis": "^2.8.0"
+  }
+}

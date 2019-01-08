@@ -1,0 +1,99 @@
+html, body, div, label, input, span, button, p {
+    margin: 0;
+    padding: 0;
+}
+input::-webkit-input-placeholder {
+    color: #bfbebe;
+}
+input::-moz-placeholder {
+    color: #bfbebe;
+}
+input:-ms-input-placeholder {
+    color: #bfbebe;
+}
+
+body {
+    margin: 0 10px;
+}
+
+.form div {
+    display: flex;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+.form div:last-child {
+    margin: 0;
+}
+
+label {
+    width: 100px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.required {
+    color: #ff0000;
+}
+
+input {
+    width: 220px;
+    padding-left: 4px;
+    border-radius: 4px;
+    border: 1px solid #bfbebe;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+    background: #FF8C00;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-left: 100px;
+}
+
+
+.list {
+    margin-top: 20px;
+    width: 600px;
+    border: 1px solid #c3bcbc;
+}
+.list .row {
+    display: flex;
+    text-align: center;
+    line-height: 2;
+    border-bottom: 1px solid #eae1e1;
+}
+.list .row p:first-child,
+.list .row p:last-child {
+    width: 120px;
+}
+.list .row p:nth-child(2) {
+    flex: 1;
+}
+.list .header {
+    background: #e8e8e8;
+}
+
+
+.operation {
+    width: 600px;
+    display: flex;
+    margin: 20px auto;
+}
+.operation p {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ded0d0;
+    border-radius: 10px;
+}
+.export {
+    width: 60px;
+    margin-right: 10px;
+}
+.clear {
+    width: 100px;
+    margin-right: 10px;
+}

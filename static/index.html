@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>个人报销预提</title>
+        <link rel="stylesheet" href="./index.css"/>
+    </head>
+    <body>
+        <h3>个人报销预提</h3>
+
+        <form method="post" class="form">
+            <div>
+                <label><span class="required">*</span>姓名：</label>
+                <input type="text" name="name" id="name" list="names" placeholder="请输入姓名" required/>
+                <datalist id="names"></datalist>
+            </div>
+            <div>
+                <label><span class="required">*</span>成本中心：</label>
+                <input type="text" name="center-cost" id="center-cost" placeholder="请输入成本中心" required/>
+            </div>
+            <div>
+                <label><span class="required">*</span>预提金额：</label>
+                <input type="number" name="money" min='0' id="money"placeholder="请输入预提金额" required/>
+            </div>
+            <div>
+                <button type="submit" class="submit">确定</button>
+            </div>
+        </form>
+
+        <div class="operation">
+            <p class="export">导出</p>
+            <p class="clear">清空数据</p>
+        </div>
+
+        <div class="list">
+            <div class="row header">
+                <p>姓名</p>
+                <p>成本中心</p>
+                <p>金额(元)</p>
+            </div>
+            <div id="list-body"></div>
+        </div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src='./index.js'></script>
+    </body>
+</html>
